@@ -65,7 +65,7 @@ setInterval(function () {
     clientSdtCS.guilds.cache.forEach(function (value, key) {
         try {
             value.members.cache.get("811005436618473553").setNickname("AUM");
-            value.members.cache.get("811005436618473553").user.setActivity(numberWithCommas(sdtTVL), {type: 'PLAYING'});
+            value.members.cache.get("811005436618473553").user.setActivity("$" + numberWithCommas(sdtTVL), {type: 'PLAYING'});
         } catch (e) {
             console.log(e);
         }
